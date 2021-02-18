@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulários na HTML5</title>
+    </head>
+    <body>
+        <h1>Formulários</h1>
+        <p>
+            Para criar um formulário, se usa a tag form e como atributo se usa:
+        </p>
+
+        <ul>
+            <li>
+                <i>Action</i> que tem como valor a página de processamento do 
+                que o form estiver passando para o servidor;
+            </li>
+            <li>
+                <i>Method</i> que recebe como valor GET ou POST sendo GET para 
+                pegar info de um banco, por exemplo, e post para enviar info 
+                para um banco.
+            </li>
+        </ul>
+
+        <p>
+            E dentro do form se usa o input que quiser como text, textarea,
+            radio, etc. Por exemplo:
+        </p>
+
+        <form action="subscribe.js" method="POST">
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="Username" autocomplete="off">
+        </form>
+    </body>
+</html>
