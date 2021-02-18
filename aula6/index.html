@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tabelas na HTML5</title>
+    </head>
+    <body>
+        <h1>Tabelas</h1>
+        <p>
+            Tabelas devem ser usadas apenas em dados tabulares. O que significa
+            que eu quase nunca vou usar isso durante minha trajetória. Todavia,
+            para se montar tabelas, eis o processo:
+        </p>
+
+        <table>
+            <tr>
+                <th>Filme</th>
+                <th>Vendas</th>
+            </tr>
+            <tr>
+                <td>Jumanji</td>
+                <td>1B</td>
+            </tr>
+            <tr>
+                <td>Ad Astra</td>
+                <td>2B</td>
+            </tr>
+        </table>
+
+        <p>
+            Para mesclar colunas e linhas se usa rowspan e colspan,
+            respectivamente.
+        </p>
+
+        <table>
+            <tr>
+                <th colspan="3">Filme</th>
+                <th rowspan="300">Vendas</th>
+            </tr>
+            <tr>
+                <td>Jumanji</td>
+                <td>1B</td>
+            </tr>
+            <tr>
+                <td>Ad Astra</td>
+                <td>2B</td>
+            </tr>
+        </table>
+
+        <p>
+            Para criar tabelas longas, se usa thead para os títulos,
+            tbody para o corpo e tfoot para footer. O atributo scope
+            pode ser usado para ditar se o título da tabela será para
+            coluna, linha ou conjunto de alguma dessas.
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th scope="colgroup">Lorem</th>
+                    <th scope="colgroup">Lorem</th>
+                    <th scope="colgroup">Lorem</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ipsium</td>
+                    <td>Ipsium</td>
+                    <td>Ipsium</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Dolor</td>
+                    <td>Dolor</td>
+                    <td>Dolor</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
