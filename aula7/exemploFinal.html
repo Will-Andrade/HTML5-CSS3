@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exemplo de formulário</title>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Suas Informações</legend>
+            <form action="accountInfo.js" method="GET">
+
+                <label>Name:
+                    <input type="text" name="username" id="username-input"
+                    required autocomplete="off">
+                </label>
+                <br><br>
+
+                <label>Email:
+                    <input type="email" name="email" id="user-email" 
+                    required autocomplete="off">
+                </label>
+                <br>
+
+            </form>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Sua Revisão</legend>
+            <form action="userReview.js" method="POST">
+                <label for="referral-method">
+                    Como ficou sabendo de nosso projeto?
+                </label>
+                <br>
+
+                <select name="referral" id="referral-method">
+                    <option value="instagram">Instagram</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="twitter">Twitter</option>
+                    <option value="college">Faculdade</option>
+                    <option value="friends">Amigos</option>
+                </select>
+
+                <p>Você nos visitaria novamente?</p>
+                <label>
+                    <input type="radio" name="option" 
+                    id="option-input" value="Yes" required>Sim
+                </label>
+                <label>
+                    <input type="radio" name="option" 
+                    id="option-input" value="No">Não
+                </label>
+                <br><br>
+
+                <label>
+                    Feedback Adicional:
+                    <br>
+                    <textarea name="comments" id="user-comments"></textarea>
+                </label>
+                <br><br>
+
+                <input type="submit" value="Enviar Feedback!">
+            </form>
+        </fieldset>
+    </body>
+</html>
