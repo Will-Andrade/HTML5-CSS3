@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="Exemplos de tags extras da HTML5">
+        <meta name="keywords" content="HTML5, Tags, Elements, Examples, tutorial">
+        <meta http-equiv="author" content="Willian Andrade">
+        <meta http-equiv="pragma" content="no-cache">
+        <meta http-equiv="expires" content="Fri, 19 Feb 2021 23:59:59 GMT">
+
+        <title>Marcação HTML5 Extra</title>
+        <style>
+            dfn > dt {
+                font-weight: bold;
+            }
+
+            span {
+                color: pink;
+            }
+
+            #black-background {
+                background: black;
+            }
+
+            .purple-letters {
+                color: purple;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Marcação HTML5 Extra</h1>
+        <dfn>
+            <dt>DOCTYPE</dt>
+            <dd>
+                Doctypes são usados para que o navegador compreenda qual versão
+                da HTML estou usando no arquivo.
+            </dd>
+            <br>
+
+            <dt>Atributos ID e Class</dt>
+            <dd>
+                Atributos ID servem para adicionar a um elemento um
+                identificador único que pode ser usado tanto num arquivo CSS3
+                quanto num arquivo JavaScript para manipulação de estilos e 
+                funcionalidades do elemento. O atributo Class também. A
+                diferença é que enquanto só se pode usar uma <b>ID</b> para 
+                cada elemento, é possível anexar várias <b>Classes</b> a um 
+                elemento e atribuir a ele diversas funcionalidades e estilos 
+                dessa forma.
+            </dd>
+            <br>
+
+            <dt>Inline Elements e Block Elements</dt>
+            <dd>
+                Elementos Inline são elementos que podem ser inseridos dentro
+                de elementos de bloco, ocupam apenas uma linha sem criar alguma
+                nova e também ocupam apenas a largura necessária na tela. Em 
+                contrapartida, Elementos de Bloco fazem o contrário. Eles 
+                iniciam em nova linha, ocupam 100% da largura e não podem ser 
+                inseridos dentro de elementos inline.
+            </dd>
+            <br>
+
+            <dt>Div e Span</dt>
+            <dd>
+                A tag div é usada como agrupador quando não se possui outra 
+                alternativa disponível, sendo um agrupador de elementos de 
+                elementos de bloco. A tag span é um elemento inline e é usado
+                quando se deseja alterar o estilo ou funcionalidade de uma 
+                pequena parte de alguma coisa (texto, por exemplo).
+            </dd>
+            <br>
+
+            <dt>iFrames e Caracteres de Escape</dt>
+            <dd>
+                iFrames são usados para incluir conteúdo externo na página.
+                Como outras páginas, mapas, textos, etc. Caracteres de Escape
+                são usados em conjunto com o símbolo "&" e lhe permitem inserir
+                caracteres reservados da HTML5 no texto sem problemas.
+            </dd>
+            <br>
+
+            <dt>Meta</dt>
+            <dd>
+                As tags de metadados que são usadas na Head do HTML. Elas são
+                necessárias para inserir funcionalidades como descrição doque
+                a página contém em seu corpo, atributo <i>description</i>, 
+                palavras chave que o usuário pode digitar na pesquisa e
+                encontrar a página, atributo <i>keywords</i>, se os mecanismos
+                de busca devem ou não deixar essa página nos resultados de
+                pesquisa, atributo <i>robots</i>, autores da página, atributo
+                <i>author</i>, evitar que o browser armazene cache, atributo
+                <i>pragma</i> e dar uma data de vencimento do cache, atributo
+                <i>expires</i>. Os 3 primeiros são usados com o atributo 
+                <i>name</i> e os 3 últimos com o atributo <i>http-equiv</i>.
+            </dd>
+        </dfn>
+        <br>
+
+        <h2>Exemplos</h2>
+        <div>
+            <p>
+                Este parágrafo está dentro de uma div. <span>E essa parte dele
+                está dentro de um span que muda a cor de branco para 
+                rosa!</span>
+            </p>
+        </div>
+
+        <div id="black-background">
+            <p class="purple-letters">
+                Este parágrafo está dentro de uma div com id "black-background"
+                e ele possui uma classe chamada "purple-letters". Quando se
+                clica nesse parágrafo, um alert aparece na tela!
+            </p>
+        </div>
+
+        <div class="iframe-div">
+            <iframe title="Inline frame Example" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik" width="400" height="250">
+            </iframe>
+        </div>
+
+        <div>
+            <p>
+                Alguns exemplos de caracteres de escape: <br>
+                &NotPrecedesEqual;
+                &backepsilon;
+                &comma;
+                &ddarr;
+            </p>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
