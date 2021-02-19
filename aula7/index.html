@@ -28,7 +28,80 @@
 
         <form action="subscribe.js" method="POST">
             <label for="username">Username</label>
-            <input type="text" name="username" placeholder="Username" autocomplete="off">
+            <input type="text" name="username" placeholder="ID"
+            autocomplete="off">
+            <label for="password">Password</label>
+            <input type="password" placeholder="pass">
+            <input type="submit" value="Submit">
         </form>
+
+        <h2>Outros tipos de inputs</h2>
+        <ul>
+            <li>Textarea <br> <textarea name="" id="" cols="30" rows="10"></textarea></li>
+            <br>
+            <li>
+                Radio <br>
+                <input type="radio" name="genre" id="rock-genre" value="Rock" checked> Rock
+                <input type="radio" name="genre" id="pop-genre" value="Pop"> Pop
+                <input type="radio" name="genre" id="jazz-genre" value="Jazz"> Jazz
+            </li>
+            <br>
+            <li>
+                checkbox <br>
+                <input type="checkbox" name="service" id="itunes" value="iTunes" checked> iTunes
+                <input type="checkbox" name="service" id="spotify" value="Spotify"> Spotify
+                <input type="checkbox" name="service" id="lastfm" value="lastFM"> lastFM
+            </li>
+            <br>
+            <li>
+                <fieldset>
+                    <legend>Caixa de lista suspensa, select </legend>
+                    
+                    <p>Que instrumento você toca?</p>
+                    <select name="instruments" id="instruments">
+                        <option value="guitar" >Guitarra</option>
+                        <option value="drums">Bateria</option>
+                        <option value="Sax" selected>Saxofone</option>
+                    </select>
+                </fieldset>
+            </li>
+            <br>
+            <li>
+                Caixa de upload de arquivo: <br>
+                <input type="file" name="user-img" id="userimg">
+                <input type="submit" value="Upload">
+            </li>
+            <br>
+            <li>
+                O botão em si: <br>
+                <button>Click!</button>
+            </li>
+            <br>
+            <li>
+                A tag label é usada para dar sentido ao input o qual ela está
+                atrelada. Pode também ser usada de duas formas: encapsulando o
+                input ou antes do input e usando um atributo "for" com valor
+                sendo uma id desse input. Exemplo: <br>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
+            </li>
+            <br>
+            <li>
+                <fieldset>
+                    <legend>Validação, date input, email, url e search</legend>
+                    <form action="">
+                        <label for="userage">Sua idade:</label>
+                        <input type="date" name="userage" id="age-input" required><br>
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email-input" required><br>
+                        <label for="userwebsite">A URL do seu portifólio</label>
+                        <input type="url" name="url" id="url"><br>
+                        <label for="searchQuery">Pesquisa</label>
+                        <input type="search" name="searchQuery" id="search-input">
+                        <input type="submit" value="Enviar">
+                    </form>
+                </fieldset>
+            </li>
+        </ul>
     </body>
 </html>
