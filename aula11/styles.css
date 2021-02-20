@@ -1,0 +1,11 @@
+p.one {
+    width: 200px;
+    height:240px;
+    background-color: rgba(133, 52, 52, 0.2);
+}
+
+p.two {
+    width: 200px;
+    height:240px;
+    background-color: rgba(200, 130, 200, 1);
+}

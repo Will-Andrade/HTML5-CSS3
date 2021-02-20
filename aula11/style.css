@@ -1,0 +1,42 @@
+/* Alguns métodos para dar cor na CSS. Ainda existe HSLA e RGBA */
+
+body {
+    background-color: hsl(0, 0%, 78%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #fff;
+    background-color: darkcyan;
+    padding: 10px;
+}
+
+h2 {
+    color: #fff;
+    background-color: #ee3e80;
+    padding: 10px;
+}
+
+p {
+    color: #000;
+    background-color: hsla(0, 100%, 100%, 0.5);
+    padding: 10px;
+}
+
+/* Cores de fundo */
+/* 
+body {
+    background-color: rgb(200, 200, 200);
+}
+
+h1 {
+    background-color: darkcyan;
+}
+
+h2 {
+    background-color: #ee3e80;
+}
+
+p {
+    background-color: white;
+} */
